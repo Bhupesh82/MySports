@@ -47,6 +47,7 @@ import { RegisterComponent } from './register/register.component';
   UserService,  
   { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
   { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+   fakeBackendProvider
 		],
   bootstrap: [AppComponent]
 })
